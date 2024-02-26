@@ -8,7 +8,9 @@ $orange: #ffa852;
 $blue: #5271ff;
 $lightblue: #5271f0;
 $gray: #797979;
-
+@media (max-width: 1199.98px) {
+  $font-xxl: 32px;
+}
 .font-sm {
   font-size: $font-sm;
 }
@@ -25,7 +27,7 @@ $gray: #797979;
   font-size: $font-xxl;
 }
 .text-orange {
-  color: $orange;
+  color: $orange !important;
 }
 .text-blue {
   color: $blue;
@@ -35,4 +37,106 @@ $gray: #797979;
 }
 .text-gray {
   color: $gray;
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-orange {
+  background-color: $orange !important;
+}
+@media (min-width: 1200px) {
+  .container_modified {
+    max-width: 1164px !important;
+    margin: auto;
+  }
+}
+
+.transition_03s {
+  transition: all 0.3s ease-in-out;
+}
+.nav_hover:hover {
+  color: $orange !important;
+}
+.nav_line::after {
+  content: "";
+  height: 3px;
+  width: 77px;
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $orange;
+  border-radius: 0px 0px 5px 5px;
+}
+.common_btn {
+  border-radius: 10px;
+  padding: 17px 50px;
+  border: 1px solid transparent;
+  background-color: $blue;
+  color: white;
+  font-weight: 500;
+  font-size: $font-md;
+  transition: all 0.3s ease-in-out;
+}
+.common_btn:hover {
+  box-shadow: inset 0 65px 0 $orange;
+}
+.nav_btn {
+  padding: 12px 50px;
+  font-size: 16px;
+}
+.nav_btn:hover {
+  box-shadow: inset 0 65px 0 $blue;
+  border: 1px solid orange;
+}
+.hero_circle {
+  z-index: -1;
+}
+.nav_logo_parent {
+  width: 100%;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar-toggler {
+  border: 0 !important;
+  padding: 0;
+}
+.collapsed .navbar-toggler-icon {
+  width: 22px !important;
+  height: 16px !important;
+  background-image: url("../images/svg/toggle.svg") !important;
+}
+.navbar-toggler-icon {
+  width: 18px !important;
+  height: 18px !important;
+  background-image: url("../images/svg/cross.svg") !important;
+}
+
+@media (max-width: 991.98px) {
+  // .navbar-expand-lg {
+  //   padding-top: 12px !important;
+  //   padding-bottom: 12px !important;
+  // }
+  .nav_logo_parent,
+  .nav_hover {
+    width: fit-content;
+  }
+  .nav_line::after {
+    display: none;
+  }
+  .navbar-nav {
+    border-top: 1px solid #758dff;
+  }
+  .nav_btn {
+    max-width: 332px;
+    margin: auto;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .nav_logo_parent img {
+    max-width: 99px;
+  }
 }

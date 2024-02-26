@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const CustomButton = () => {
+const CustomButton = ({ text, btnStyle, icon }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <button className={`common_btn ${btnStyle}`}>
+      {text} {icon ? icon : ""}
+    </button>
+  );
+};
 
-export default CustomButton
+export default CustomButton;
