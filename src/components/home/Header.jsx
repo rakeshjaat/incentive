@@ -7,7 +7,7 @@ import CustomButton from "../common/CustomButton";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-blue py-3">
+    <Navbar expand="lg" className="bg-blue py-2 position-fixed top-0 end-0 start-0 z-3">
       <Container className="container_modified">
         <div className="nav_logo_parent">
           <Navbar.Brand className="py-0" href="#home">

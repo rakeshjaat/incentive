@@ -1,4 +1,4 @@
-@import "./hero.scss";
+// @import "./hero.scss";
 $font-sm: 16px;
 $font-md: 18px;
 $font-lg: 20px;
@@ -8,6 +8,18 @@ $orange: #ffa852;
 $blue: #5271ff;
 $lightblue: #5271f0;
 $gray: #797979;
+// @font-face {
+//   font-family: Circular Std light;
+//   src: url("../fonts/CIRCE-LIGHT.TTF");
+// }
+@font-face {
+  font-family: Circular Std;
+  src: url("../fonts/circular-std-medium-500 (1).ttf");
+}
+body {
+  font-family: Circular Std;
+  font-weight: 400;
+}
 @media (max-width: 1199.98px) {
   $font-xxl: 32px;
 }
@@ -82,15 +94,12 @@ $gray: #797979;
   box-shadow: inset 0 65px 0 $orange;
 }
 .nav_btn {
-  padding: 12px 50px;
+  padding: 7px 38px 10px 38px;
   font-size: 16px;
 }
 .nav_btn:hover {
   box-shadow: inset 0 65px 0 $blue;
   border: 1px solid orange;
-}
-.hero_circle {
-  z-index: -1;
 }
 .nav_logo_parent {
   width: 100%;
@@ -112,7 +121,24 @@ $gray: #797979;
   height: 18px !important;
   background-image: url("../images/svg/cross.svg") !important;
 }
-
+.hero_section {
+  padding-top: 72px;
+}
+.hero_circle {
+  margin-top: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.hero_heading_vector {
+  transform: translateX(-20px);
+  height: 110%;
+}
+.tools_card {
+  box-shadow: 0px 4px 50px 0px #0000001a;
+  border-radius: 10px;
+  padding: 20px;
+}
 @media (max-width: 991.98px) {
   // .navbar-expand-lg {
   //   padding-top: 12px !important;

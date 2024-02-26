@@ -1,3 +1,5 @@
+import { AutoMotive } from "./Icons";
+
 export const navLinks = [
   {
     link: "Menu",
@@ -14,5 +16,55 @@ export const navLinks = [
   {
     link: "Menu",
     url: "/",
+  },
+];
+export const toolCards = [
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
+  },
+  {
+    icon: <AutoMotive />,
+    title: "Automotive",
   },
 ];
