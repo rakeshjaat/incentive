@@ -1,0 +1,39 @@
+.border {
+  border: 1px solid #000000;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-lg {
+  font-size: 20px;
+}
+
+.font-xl {
+  font-size: 26px;
+}
+
+.font-xxl {
+  font-size: 40px;
+}
+
+.text-orange {
+  color: #ffa852;
+}
+
+.text-blue {
+  color: #5271ff;
+}
+
+.text-lightblue {
+  color: #5271f0;
+}
+
+.text-gray {
+  color: #797979;
+}/*# sourceMappingURL=style.css.map */
